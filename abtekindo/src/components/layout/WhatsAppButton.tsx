@@ -12,10 +12,10 @@ export const WhatsAppButton: React.FC = () => {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-8 right-8 w-16 h-16 bg-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform duration-200 z-50 border-4 border-blue-900"
+      className="fixed bottom-8 right-8 w-16 h-16 hover:pointer bg-white rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition-transform duration-200 z-50 border-4 border-[#1e3a8a]"
       aria-label="Chat via WhatsApp"
     >
-      <FontAwesomeIcon icon={faWhatsapp} className="text-blue-900 text-3xl" />
+      <FontAwesomeIcon icon={faWhatsapp} className="text-[#1e3a8a] text-3xl" />
     </button>
   );
 };

@@ -17,12 +17,12 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   disabled = false,
 }) => {
-  const baseStyles = 'font-semibold rounded-lg transition-all duration-200';
+  const baseStyles = 'font-semibold rounded-xl transition-all duration-200';
   
   const variants = {
-    primary: 'bg-blue-900 text-white hover:bg-blue-800',
-    secondary: 'bg-yellow-400 text-blue-900 hover:bg-yellow-300',
-    outline: 'border-2 border-blue-900 text-blue-900 hover:bg-blue-50',
+    primary: 'bg-[#1e3a8a] text-white hover:bg-blue-800',
+    secondary: 'bg-yellow-400 text-[#1e3a8a] hover:bg-yellow-300',
+    outline: 'border-2 border-[#1e3a8a] text-[#1e3a8a] hover:bg-blue-50',
   };
   
   const sizes = {

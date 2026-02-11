@@ -20,9 +20,9 @@ export const SearchBar: React.FC<SearchBarProps> = ({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="w-full px-6 py-3 pr-14 border-2 border-gray-300 rounded-full focus:outline-none focus:border-blue-900 transition-colors"
+        className="w-full px-6 py-4 pr-16 border-2 border-gray-300 rounded-full focus:outline-none focus:border-[#1e3a8a] transition-colors text-base"
       />
-      <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors">
+      <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-11 h-11 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors">
         <FontAwesomeIcon icon={faSearch} />
       </button>
     </div>

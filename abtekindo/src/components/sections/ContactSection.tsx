@@ -54,7 +54,7 @@ export const ContactSection: React.FC = () => {
   ];
   
   return (
-    <div className="bg-blue-900 text-white py-16 min-h-screen flex items-center">
+    <div className="bg-blue-900 text-white py-16 flex items-center">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
@@ -88,7 +88,7 @@ export const ContactSection: React.FC = () => {
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   placeholder="Email..."
                   required
-                  className="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                  className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400"
                 />
               </div>
               
@@ -100,7 +100,7 @@ export const ContactSection: React.FC = () => {
                   placeholder="Konten..."
                   required
                   rows={6}
-                  className="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none"
                 ></textarea>
               </div>
               

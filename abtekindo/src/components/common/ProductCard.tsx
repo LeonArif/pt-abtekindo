@@ -12,9 +12,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div
       onClick={() => navigate(`/product/${product.id}`)}
-      className="bg-white rounded-lg border-2 border-gray-200 p-4 hover:shadow-lg transition-shadow cursor-pointer"
+      className="bg-white rounded-xl border-2 border-gray-200 p-5 hover:shadow-xl transition-all duration-300 cursor-pointer hover:border-[#1e3a8a]"
     >
-      <div className="aspect-square bg-gray-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+      <div className="aspect-square bg-gray-50 rounded-lg mb-4 flex items-center justify-center overflow-hidden p-4">
         <img
           src={product.image}
           alt={product.name}
@@ -22,20 +22,20 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         />
       </div>
       
-      <div className="flex gap-2 mb-2">
-        <span className="px-3 py-1 bg-blue-900 text-white text-xs rounded-full font-semibold">
+      <div className="flex gap-2 mb-3">
+        <span className="px-3 py-1 bg-[#1e3a8a] text-white text-xs rounded-full font-semibold">
           {product.type}
         </span>
-        <span className="px-3 py-1 bg-blue-900 text-white text-xs rounded-full font-semibold">
+        <span className="px-3 py-1 bg-[#1e3a8a] text-white text-xs rounded-full font-semibold">
           SPLIT
         </span>
       </div>
       
-      <h3 className="font-semibold text-gray-800 mb-2 line-clamp-2">
+      <h3 className="font-semibold text-gray-800 mb-3 line-clamp-2 min-h-[3rem]">
         {product.name}
       </h3>
       
-      <p className="text-lg font-bold text-blue-900">
+      <p className="text-xl font-bold text-[#1e3a8a]">
         IDR {product.price.toLocaleString('id-ID')}
       </p>
     </div>
